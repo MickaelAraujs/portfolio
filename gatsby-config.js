@@ -10,5 +10,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Ubuntu:300,400,500,700']
+        }
+      }
+    }
   ],
 }
