@@ -13,6 +13,7 @@ export const HeaderContainer = styled.header`
   padding: 0 75px;
 
   border-bottom: 0.5px solid #429586;
+  z-index: 9;
 
   img {
     width: 215px;

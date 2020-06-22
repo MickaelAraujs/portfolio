@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
   body, body * {
@@ -9,4 +9,8 @@ export const GlobalStyles = createGlobalStyle`
 
     font-family: 'Ubuntu', sans-serif;
   }
+`
+
+export const Container = styled.div`
+  transform: translateY(20vh);
 `
