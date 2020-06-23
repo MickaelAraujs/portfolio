@@ -9,8 +9,13 @@ export const GlobalStyles = createGlobalStyle`
 
     font-family: 'Ubuntu', sans-serif;
   }
+
+  html, body {
+    background: #FCFCFC;
+  }
 `
 
 export const Container = styled.div`
-  transform: translateY(20vh);
+  padding-top: 20vh;
+  padding-bottom: 16px;
 `

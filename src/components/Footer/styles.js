@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
-  position: fixed;
+  position: ${props => props.page !== 'projects' ? 'absolute' : 'relative'};
   bottom: 0;
   right: 0;
   left: 0;
@@ -10,7 +10,7 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   align-items: center;
   height: 15vh;
-
+  
   div {
     min-width: 370px;
     display: flex;

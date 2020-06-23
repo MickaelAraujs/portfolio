@@ -6,7 +6,7 @@ import { Container } from './styles'
 import Header from '../Header'
 import Footer from '../Footer'
 
-export default function Layout({ children }) {
+export default function Layout({ children, page }) {
   return (
     <Container>
       <GlobalStyles />
@@ -17,7 +17,7 @@ export default function Layout({ children }) {
         {children}
       </main>
 
-      <Footer />
+      <Footer page={page}/>
     </Container>
   )
 }

@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 import { FooterContainer } from './styles'
 
-export default function Footer() {
+export default function Footer({ page }) {
   return (
-    <FooterContainer>
+    <FooterContainer page={page}>
       <div>
         <a href='https://github.com/MickaelAraujs'>
           <FaGithub size={36} color='#429586' />

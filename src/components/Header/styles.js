@@ -11,12 +11,13 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 75px;
-
+  background: #429586;
   border-bottom: 0.5px solid rgba(66,149,134, 0.2);
   z-index: 9;
 
   img {
-    width: 215px;
+    width: 195px;
+    margin-top: 8px;
   }
 
   nav {
@@ -38,11 +39,11 @@ export const HeaderContainer = styled.header`
         a {
           text-decoration: none;
           font-size: 16px;
-          color: #429586;
+          color: #FCFCFC;
           font-weight: bold;
           
           display: flex;
-          align-items: baseline;
+          align-items: center;
 
           svg {
             margin-right: 8px;
