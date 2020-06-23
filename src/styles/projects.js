@@ -1,7 +1,18 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const Slide = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`
 
 export const ProjectsContainer = styled.div`
   padding-left: 75px;
+  animation: ${Slide} 0.8s forwards;
 
   h1 {
     color: #429586;
