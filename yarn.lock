@@ -6024,6 +6024,14 @@ gatsby-page-utils@^0.2.9:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-nprogress@^2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.3.5.tgz#ed1497730ecf7976aafe7e96a6da694513559608"
+  integrity sha512-VBZFxdm90ntEAs7/kOz5yJDrITDUX9G/9Nf5Z8WHJowxHuJhOoWfWovu+vIbq8R8epyb+b78YEK9J0xi+j3BNQ==
+  dependencies:
+    "@babel/runtime" "^7.10.2"
+    nprogress "^0.2.0"
+
 gatsby-plugin-page-creator@^2.3.9:
   version "2.3.9"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.3.9.tgz#b0793cf1340dc903560791fea4948c28b2d302ad"
@@ -6036,6 +6044,11 @@ gatsby-plugin-page-creator@^2.3.9:
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
+
+gatsby-plugin-page-progress@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-progress/-/gatsby-plugin-page-progress-2.1.0.tgz#9c0036309b7843fd4ca26c86611aafd69f6279e2"
+  integrity sha512-mepkiRQykQ8AFizV5/cHy6l84qhzeLLkB3h7/Om2TjkgR4XXCq1kjW1eCVYy+R8D0ZyeQ7Y+AlvjgYjuTtXmcw==
 
 gatsby-plugin-styled-components@^3.3.4:
   version "3.3.4"
@@ -8915,6 +8928,11 @@ npm-run-path@^4.0.0:
   integrity sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==
   dependencies:
     path-key "^3.0.0"
+
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
 nth-check@^1.0.2, nth-check@~1.0.1:
   version "1.0.2"

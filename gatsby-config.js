@@ -17,6 +17,25 @@ module.exports = {
           families: ['Ubuntu:300,400,500,700']
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `#FFE55E`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: ["/projects"],
+        height: 3,
+        prependToBody: false,
+        color: `#FFE55E`,
+        footerHeight: 500,
+      }
     }
   ],
 }
