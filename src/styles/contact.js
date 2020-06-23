@@ -1,10 +1,22 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const Slide = keyframes`
+  0% {
+    margin-left: -10000px;
+  }
+
+  100% {
+    margin-left: 75px;
+  }
+`
 
 export const ContactContainer = styled.div`
   height: 65vh;
   max-width: 680px;
   margin: 0 0 75px 75px;
   padding-top: 32px;
+
+  animation: ${Slide} 0.8s forwards;
 
   h2 {
     font-size: 36px;
