@@ -1,4 +1,24 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const animatedNav = keyframes`
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50vw;
+  }
+`
+
+const animatedBtn = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`
 
 export const HeaderContainer = styled.header`
   position: fixed;
@@ -15,6 +35,10 @@ export const HeaderContainer = styled.header`
   border-bottom: 0.5px solid rgba(66,149,134, 0.2);
   z-index: 9;
 
+  .responsive {
+    display: none;
+  }
+
   img {
     width: 195px;
     margin-top: 8px;
@@ -27,7 +51,7 @@ export const HeaderContainer = styled.header`
 
     ul {
       list-style: none;
-      width: 75%;
+      width: 60%;
       display: flex;
       justify-content: space-evenly;
 
@@ -52,6 +76,80 @@ export const HeaderContainer = styled.header`
           }
         }
       }
-    }
+    }  
   }
+
+  @media (max-width: 425px) {
+    padding: 0;
+    width: 100%;
+    
+    img {
+      width: 125px;
+      margin-left: 16px;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .responsive {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    
+      button {
+        align-self: flex-end;
+        margin-right: 24px;
+        background: transparent;
+        border: 0;
+      }
+    }
+
+    .active {
+      background: #429586;
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100%;
+      animation: ${animatedNav} 0.8s forwards;
+  
+      button {
+        margin-top: 36px;
+        animation: ${animatedBtn} 0.8s forwards;
+      }
+  
+      nav {
+        display: block;
+        
+      
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin-top: 48px;
+
+          li {
+            margin-top: 16px;
+            width: 100%;
+            border-bottom: 0.5px solid rgba(252,252,252,0.6);
+            padding-left: 20px;
+            padding-bottom: 4px;
+
+            a {
+              display: flex;
+              align-items: baseline;
+              font-weight: 200;
+              font-size: 20px;
+
+              svg {
+                margin-bottom: 8px;
+                margin-right: 16px;
+              }
+            }
+          }
+        }     
+      }
+}}
 `

@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import { FiInfo, FiCode, FiMail } from 'react-icons/fi'
+import { FiInfo, FiCode, FiMail, FiMenu, FiX } from 'react-icons/fi'
 
 import { HeaderContainer } from './styles'
 
 import logo from '../../assets/logo.png'
+import ResponsiveNav from '../ResponsiveNav'
 
 export default function Header() {
+  const [isButtonClicked, setIsButtonClicked] = useState(false)
+
   return (
     <HeaderContainer>
       <Link to='/'>
@@ -14,6 +17,22 @@ export default function Header() {
           <img src={logo} alt='Mickael Araujo - Full-stack Developer'/>
         </h1>
       </Link>
+
+      <div
+      className={isButtonClicked ? 'responsive active' : 'responsive'}
+      >
+        <button
+        onClick={() => setIsButtonClicked(!isButtonClicked)}
+        >
+          { !isButtonClicked ? (
+            <FiMenu size={32} color='#fff'/>
+          ) : (
+            <FiX size={26} color='#fff'/>
+          ) }
+        </button>
+
+        <ResponsiveNav />
+      </div>
 
       <nav>
         <ul>

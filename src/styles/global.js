@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
 
   html, body {
     background: #FCFCFC;
+    width: 100%;
   }
 `
 
