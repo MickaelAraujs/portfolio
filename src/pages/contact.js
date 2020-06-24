@@ -18,7 +18,7 @@ export default function Contact() {
             Aqui estão algumas opções de contato.
             Caso queira conversar de uma forma mais direta,
             minhas redes sociais também estão disponíveis abaixo.
-            Sinta-se a vontade :D
+            <br /> Sinta-se a vontade 😃.
           </p>
 
           <div className="media">

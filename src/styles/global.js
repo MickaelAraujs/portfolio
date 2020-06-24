@@ -19,4 +19,9 @@ export const GlobalStyles = createGlobalStyle`
 export const Container = styled.div`
   padding-top: 20vh;
   padding-bottom: 16px;
+
+  @media (max-width: 850px) {
+    padding-top: 14vh;
+    padding-bottom: 12px;
+  }
 `

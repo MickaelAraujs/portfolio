@@ -13,6 +13,11 @@ const Slide = keyframes`
 export const AboutContainer = styled.div`
   display: flex;
   animation: ${Slide} 0.8s forwards;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const Profile = styled.div`
@@ -44,11 +49,24 @@ export const Profile = styled.div`
       margin: 8px;
     }
   }
+
+  @media (max-width: 900px) {
+    max-height: 30vh;
+
+    img {
+      width: 135px;
+    }
+
+    .techs {
+      display: none;
+    }
+  }
 `
 
 export const Description = styled.div`
   padding-top: 16px;
   padding-right: 54px;
+
   h1 {
     color: #429586;
     font-size: 48px;
@@ -90,6 +108,44 @@ export const Description = styled.div`
       font-size: 14px;
       color: #9C9999;
       margin-top: 8px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding: 0;
+    margin-top: -36px;
+
+    h1 {
+      font-size: 24px;
+      margin-left: 0;
+      text-align: center;
+
+      span {
+        font-size: 16px;
+        color: #9C9999;
+        display: block;
+        text-align: right;
+        margin-right: 32px;
+      }
+    }
+
+    p {
+      margin-left: 32px;
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 16px;
+      margin-left: 32px;
+    }
+
+    ul {
+      margin-left: 32px;
+
+      li {
+        font-size: 12px;
+      }
     }
   }
 `

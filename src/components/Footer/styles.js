@@ -17,4 +17,19 @@ export const FooterContainer = styled.footer`
     align-items: center;
     justify-content: space-around;
   }
+
+  @media (max-width: 900px) {
+    position: relative;
+    
+    div {
+      svg {
+        a {
+          svg {
+            width: 26px;
+            height: 26px;
+          }
+        }
+      }
+    }
+  }
 `

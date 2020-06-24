@@ -10,6 +10,16 @@ const animatedNav = keyframes`
   }
 `
 
+const animatedNavBack = keyframes`
+  0% {
+    width: 50vw;
+  }
+
+  100% {
+    width: 0;
+  }
+`
+
 const animatedBtn = keyframes`
   0% {
     opacity: 0;
@@ -79,7 +89,7 @@ export const HeaderContainer = styled.header`
     }  
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 850px) {
     padding: 0;
     width: 100%;
     
@@ -96,6 +106,13 @@ export const HeaderContainer = styled.header`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      /* background: #429586;
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100%;
+      animation: ${animatedNavBack} 0.4s ease-in-out forwards; */
     
       button {
         align-self: flex-end;
@@ -106,13 +123,20 @@ export const HeaderContainer = styled.header`
     }
 
     .active {
+      animation: ${animatedNav} 0.8s ease-in-out forwards;
+    }
+
+    .closed {
+      animation: ${animatedNavBack} 0.6s ease-in-out forwards;
+    }
+
+    .active, .closed {
       background: #429586;
       position: fixed;
       right: 0;
       top: 0;
       height: 100%;
-      animation: ${animatedNav} 0.8s forwards;
-  
+
       button {
         margin-top: 36px;
         animation: ${animatedBtn} 0.8s forwards;

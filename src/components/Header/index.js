@@ -19,7 +19,9 @@ export default function Header() {
       </Link>
 
       <div
-      className={isButtonClicked ? 'responsive active' : 'responsive'}
+      className={
+        isButtonClicked ? 'responsive active' : 'responsive closed'
+      }
       >
         <button
         onClick={() => setIsButtonClicked(!isButtonClicked)}

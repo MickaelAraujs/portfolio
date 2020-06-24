@@ -63,5 +63,34 @@ export const ContactContainer = styled.div`
         color: #9C9999;
       }
     }
+  }
+
+
+  @media (max-width: 850px) {
+    margin: 4vh 0 0 0;
+
+    h2 {
+      font-size: 24px;
+      margin-left: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-left: 16px;
+
+      a {
+        font-size: 14px;
+      }
+    }
+
+    .media {
+      margin: 24px 0 24px 16px;
+
+      .item {
+        .name {
+          font-size: 14px;
+        }
+      }
+    }
   } 
 `
