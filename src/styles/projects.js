@@ -86,4 +86,62 @@ export const ProjectsContainer = styled.div`
       }
     }
   }
+
+  @media (max-width: 850px) {
+    padding: 0;
+    margin-top: 4vh;
+
+    h1 {
+      font-size: 24px;
+      margin-left: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-left: 16px;
+    }
+
+    .projects {
+      margin-top: 38px;
+
+      .card {
+        margin-bottom: 32px;
+        flex-direction: column;
+
+        img {
+          width: 175px;
+          align-self: center;
+        }
+
+        .info {
+          padding-left: 54px;
+          margin-top: 8px;
+
+          div {
+            h2 {
+              font-size: 18px;
+            }
+
+            a {
+              font-size: 12px;
+            }
+
+            p {
+              font-size: 14px;
+              max-width:  275px;
+              margin: 8px 48px 32px 0;
+            }
+          }
+
+          span {
+            font-size: 16px;
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
 `
