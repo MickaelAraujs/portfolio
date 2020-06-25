@@ -8,12 +8,16 @@ import { Container } from '../styles/global'
 import { AboutContainer, Profile, Description } from '../styles/about'
 
 import Layout from '../components/Layout'
+import SEO from '../config/seo'
 
 import profile from '../assets/me.jpeg'
+
 
 export default function Home() {
   return (
     <Layout>
+      <SEO title='Sobre' />
+
       <Container>
         <AboutContainer>
           <Profile>

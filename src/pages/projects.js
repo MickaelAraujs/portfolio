@@ -5,10 +5,13 @@ import { ProjectsContainer } from '../styles/projects'
 
 import Layout from '../components/Layout'
 import Card from '../components/Card'
+import SEO from '../config/seo'
 
 export default function Projects() {
   return (
     <Layout page='projects'>
+      <SEO title='Meus Projetos' />
+
       <Container>
         <ProjectsContainer>
           <h1>Meus Projetos</h1>

@@ -6,10 +6,13 @@ import { Container } from '../styles/global'
 import { ContactContainer } from '../styles/contact'
 
 import Layout from '../components/Layout'
+import SEO from '../config/seo'
 
 export default function Contact() {
   return (
     <Layout>
+      <SEO title='Contato' />
+
       <Container>
         <ContactContainer>
           <h2>Entre em <br /> contato!</h2>

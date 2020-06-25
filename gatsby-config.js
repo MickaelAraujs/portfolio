@@ -6,7 +6,13 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Mickael Araujo`,
+    description: `Desenvolvedor web full-stack focado nas tecnologias ao redor do ecossistema Javascript. Desenvolvo soluções completas e com interfaces amigáveis para o usuário.`,
+    author: `Mickael Araujo`,
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-styled-components`,
     },
@@ -22,7 +28,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `#FFE55E`,
+        color: `#59CEB9`,
         // Disable the loading spinner.
         showSpinner: false,
       },
@@ -33,7 +39,7 @@ module.exports = {
         includePaths: ["/projects"],
         height: 3,
         prependToBody: false,
-        color: `#FFE55E`,
+        color: `#59CEB9`,
         footerHeight: 500,
       }
     }
