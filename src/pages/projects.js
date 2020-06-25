@@ -4,8 +4,7 @@ import { Container } from '../styles/global'
 import { ProjectsContainer } from '../styles/projects'
 
 import Layout from '../components/Layout'
-
-import projectThumb from '../assets/projects/projectThumb.svg'
+import Card from '../components/Card'
 
 export default function Projects() {
   return (
@@ -19,31 +18,17 @@ export default function Projects() {
           </p>
 
           <div className="projects">
-            <div className="card">
-              <img src={projectThumb} alt='Very Useful Tools To Remember'/>
+            <Card />
 
-              <div className="info">
-                <div>
-                  <h2>Very Useful Tools To Remember</h2>
+            <Card />
 
-                  <a
-                  href='https://github.com/MickaelAraujs/vuttr'
-                  target='_blank'
-                  rel='noreferrer'
-                  >
-                    https://github.com/MickaelAraujs/vuttr
-                  </a>
+            <Card />
 
-                  <p>
-                    repositório para gerenciar ferramentas com seus respectivos nomes, links, descrições e tags.
-                  </p>
-                </div>
+            <Card />
 
-                <span>
-                  Tecnologias: <span>CSS, Javascript, ReactJS</span>
-                </span>
-              </div>
-            </div>
+            <Card />
+
+            <Card />
           </div>
         </ProjectsContainer>
       </Container>

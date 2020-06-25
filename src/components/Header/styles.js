@@ -92,7 +92,8 @@ export const HeaderContainer = styled.header`
   @media (max-width: 850px) {
     padding: 0;
     width: 100%;
-    
+    height: 10vh;
+
     img {
       width: 125px;
       margin-left: 16px;
@@ -107,13 +108,6 @@ export const HeaderContainer = styled.header`
       flex-direction: column;
       justify-content: space-between;
 
-      /* background: #429586;
-      position: fixed;
-      right: 0;
-      top: 0;
-      height: 100%;
-      animation: ${animatedNavBack} 0.4s ease-in-out forwards; */
-    
       button {
         align-self: flex-end;
         margin-right: 24px;
@@ -138,7 +132,7 @@ export const HeaderContainer = styled.header`
       height: 100%;
 
       button {
-        margin-top: 36px;
+        margin-top: 16px;
         animation: ${animatedBtn} 0.8s forwards;
       }
   

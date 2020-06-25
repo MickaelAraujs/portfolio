@@ -110,11 +110,11 @@ export const ProjectsContainer = styled.div`
 
         img {
           width: 175px;
-          align-self: center;
+          margin-left: 16px;
         }
 
         .info {
-          padding-left: 54px;
+          padding-left: 16px;
           margin-top: 8px;
 
           div {
