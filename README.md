@@ -13,7 +13,7 @@ Repository to keep my portfolio website
 
 ## Execute
 
-the website is deployed on the following address: https://mickaelaraujo.netlify.app/
+the website is deployed on the following address: http://mickaelaraujo.me or https://mickaelaraujo.netlify.app/
 
 If you want to run this project on your own machine, you just need to:
 
