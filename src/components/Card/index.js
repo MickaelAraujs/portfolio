@@ -2,30 +2,33 @@ import React from 'react'
 
 import projectThumb from '../../assets/projects/projectThumb.svg'
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card">
-      <img src={projectThumb} alt='Very Useful Tools To Remember'/>
+      <img
+      src={props.img ? props.img : projectThumb}
+      alt={props.name}
+      />
 
       <div className="info">
         <div>
-          <h2>Very Useful Tools To Remember</h2>
+          <h2>{props.name}</h2>
 
           <a
-            href='https://github.com/MickaelAraujs/vuttr'
+            href={props.repo}
             target='_blank'
             rel='noreferrer'
           >
-            https://github.com/MickaelAraujs/vuttr
+            {props.repo}
           </a>
 
           <p>
-            repositório para gerenciar ferramentas com seus respectivos nomes, links, descrições e tags.
+            {props.description}
           </p>
         </div>
 
         <span>
-          Tecnologias: <span>CSS, Javascript, ReactJS</span>
+          Tecnologias: <span>{props.techs}</span>
         </span>
       </div>
     </div>

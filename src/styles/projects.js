@@ -76,7 +76,8 @@ export const ProjectsContainer = styled.div`
           color: #9C9999;
           font-size: 18px;
           font-weight: bold;
-
+          margin-top: 8px;
+          
           span {
             font-weight: 400;
             font-size: 14px;
