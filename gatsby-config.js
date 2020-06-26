@@ -6,6 +6,7 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: "/portfolio",
   siteMetadata: {
     title: `Mickael Araujo`,
     description: `Desenvolvedor web full-stack focado nas tecnologias ao redor do ecossistema Javascript. Desenvolvo soluções completas e com interfaces amigáveis para o usuário.`,
